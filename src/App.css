@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .dark {
     background-color: #171717;
+    color: #ddd;
 }
 
 .light {
@@ -84,3 +88,30 @@ nav a {
 }
 /* = END = Navbar */
 
+/* Home */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 8rem;
+}
+
+.nasro-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 20px #2D4263);
+}
+
+.details {
+    width: 60%;
+}
+
+.name {
+    font-size: 2.8rem;
+}
+
+.summary {
+    font-size: 1.2rem;
+}
+/* = END = Home */

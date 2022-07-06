@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./App.css"
+// Components
 import Navbar from "./components/Navbar";
+import Home from './components/Home';
 const App = () => {
 
   const [dark, setDark] = useState(false);
@@ -9,11 +11,19 @@ const App = () => {
     console.log(dark)
   }
   return (
-    <div className={dark ? "dark" : "light"}>
-      {dark ?
+    <div>
+      {
+      dark ?(
+       <div className='dark'>
        <Navbar toggleDark={toggleDark} dark={dark} />
-       : 
-       <Navbar toggleDark={toggleDark} dark={dark} />}
+       <Home />
+       </div>
+       ): (
+       <div className='light'>
+       <Navbar toggleDark={toggleDark} dark={dark} />
+       <Home />
+       </div>
+       )}
     </div>
   )
 }

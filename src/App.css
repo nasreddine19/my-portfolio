@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark {
+    background-color: #171717;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.light {
+    background-color: #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Navbar */
+.navbar {
+    background-color: #2D4263;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+nav a {
+    text-decoration: none;
+    color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
 }
+.dark-btn {
+    color: #000;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #2D4263;
+    padding: 5px;
+    visibility: hidden;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    opacity: 0;
+    color: #ddd;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+     .nav-links{
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+
+    .res-nav {
+        transition: 1s;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+/* = END = Navbar */
+

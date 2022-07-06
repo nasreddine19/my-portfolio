@@ -10,10 +10,12 @@
 .dark {
     background-color: #171717;
     color: #ddd;
+    transition: 0.7s ease-in-out;
 }
 
 .light {
     background-color: #ddd;
+    transition: 0.7s ease-in-out;
 }
 
 /* Navbar */
@@ -93,7 +95,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem 8rem;
+    padding: 1rem 3rem 8rem;
 }
 
 .nasro-pic {
@@ -114,4 +116,84 @@ nav a {
 .summary {
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    .nasro-pic {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* background-color: #2D4263; */
+    }
+
+    .name {
+        font-size: 2.1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .summary {
+        font-size: 1rem;
+    }
+}
 /* = END = Home */
+
+
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-header {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 80px;
+}
+
+.skills-img {
+    background-color: #2D4263;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50px 50px 50px 50px;
+    gap: 100px;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .skills-header {
+        font-size: 2.1rem;
+    }
+
+    img {
+        width: 60px;
+    }
+
+    .skills-img {
+        background-color: #2D4263;
+        grid-template-columns: 25px 25px 25px 25px;
+        gap: 60px;
+        padding: 25px;
+        justify-content: space-evenly;
+    }
+}
+/* = END =Skills */

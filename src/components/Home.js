@@ -3,6 +3,7 @@ import nasro from "../img/Nasro.jpg";
 const Home = () => {
   return (
     <div className="home">
+      <img className="nasro-pic" src={nasro} alt="nasro-pic" />
       <div className="details">
         <h2 className="name">Nasreddine Boudellal</h2>
         <p className="summary">
@@ -13,7 +14,6 @@ const Home = () => {
           Adobe Photoshop and Adobe Illustrator.
         </p>
       </div>
-      <img className="nasro-pic" src={nasro} alt="nasro-pic" />
     </div>
   );
 };

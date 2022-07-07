@@ -22,8 +22,10 @@
 .navbar {
     background-color: #2D4263;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    /* height: 100px; */
+    width: 100%;
     padding: 10px;
 }
 
@@ -34,9 +36,10 @@ nav a {
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 30%;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 100%;
 }
 .dark-btn {
     color: #000;
@@ -48,44 +51,39 @@ nav a {
     cursor: pointer;
 } 
 .nav-btn {
-    display: flex;
-    justify-content: center;
     background-color: #2D4263;
     padding: 5px;
-    visibility: hidden;
-    width: 100%;
     cursor: pointer;
     border: none;
     outline: none;
     opacity: 0;
+    visibility: hidden;
     color: #ddd;
 }
 
 @media only screen and (max-width: 1024px) {
     .nav-btn {
+        margin-top: 17px;
         visibility: visible;
         opacity: 1;
     }
 
      .nav-links{
-        justify-content: center;
-        align-items: center;
+        width: 0;
         padding: 15px;
         gap: 1.5rem;
-        transition: 1s;
         transform: translateY(-100vh);
     }
 
-
     .res-nav {
+        flex-direction: column;
+        margin-top: 3rem;
         transition: 1s;
         transform: none;
-        display: flex;
-        flex-direction: column;
     }
 
     .navbar {
-        flex-direction: column;
+        align-items: flex-start;
     }
 }
 /* = END = Navbar */

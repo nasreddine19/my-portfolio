@@ -22,11 +22,10 @@ const Navbar = (props) => {
           value={props.dark ? "Light Mode" : "Dark Mode"}
         />
       </nav>
-      
-    </header>
-        <button className="nav-btn" onClick={showNav}>
+      <button className="nav-btn" onClick={showNav}>
         <FaBars />
       </button>
+    </header>
     </>
   );
 };

@@ -153,16 +153,21 @@ nav a {
 
 
 /* Skills */
-.skills {
+.skills-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8rem;
 }
 
-.skills-header {
+/* skills header, projects header and contact header */
+
+.skills-header, .projects-header {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
+/* = END = skills header, projects header and contact header */
+
 
 img {
     width: 80px;
@@ -172,10 +177,10 @@ img {
     background-color: #2D4263;
     display: grid;
     width: 100%;
-    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px;
     gap: 100px;
     padding: 50px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -189,11 +194,68 @@ img {
     }
 
     .skills-img {
-        background-color: #2D4263;
-        grid-template-columns: 25px 25px 25px 25px;
-        gap: 60px;
-        padding: 25px;
-        justify-content: space-evenly;
+        grid-template-columns: 50px 50px 50px 50px;
+        gap: 40px;
+        padding: 50px;
+        justify-content: space-between;
     }
 }
-/* = END =Skills */
+/* = END = Skills */
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8rem;
+}
+.projects{
+    background-color: #2D4263;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 30px;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.project-item {
+    color: #ddd;
+}
+
+.project-name{
+    margin-bottom: 6px;
+}
+
+.project-desc {
+    margin-bottom: 9px;
+    font-size: 0.8rem;
+}
+
+.project-btn {
+    color: #000;
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .projects{
+        grid-template-columns: 60% 60%;
+        padding: 60px;
+    }
+
+    .project-name{
+        font-size: 1.5rem;
+    }
+
+    .project-btn {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+/* = END = Projects */

@@ -4,6 +4,7 @@ import "./App.css"
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 const App = () => {
 
   const [dark, setDark] = useState(false);
@@ -19,12 +20,14 @@ const App = () => {
        <Navbar toggleDark={toggleDark} dark={dark} />
        <Home />
        <Skills />
+       <Projects />
        </div>
        ): (
        <div className='light'>
        <Navbar toggleDark={toggleDark} dark={dark} />
        <Home />
        <Skills />
+       <Projects />
        </div>
        )}
     </div>

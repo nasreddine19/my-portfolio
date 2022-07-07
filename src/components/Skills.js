@@ -7,7 +7,7 @@ import react from "../img/React.png"
 import git from "../img/git.png"
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills-container'>
         <h3 className='skills-header'>Skills</h3>
         <div className='skills-img'>
             <img src={html} alt="html5-pic"/>

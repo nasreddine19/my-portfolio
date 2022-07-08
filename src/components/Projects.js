@@ -13,8 +13,8 @@ const Projects = () => {
             "Quiz App" is a quiz where the questions must be answered by
             choosing category, difficulty and number of questions.
           </p>
-          <input className="project-btn" type="submit" value="View Project" />
-          <input className="project-btn" type="submit" value="Github Code" />
+          <a href='https://nasro-quiz-app.netlify.app/' target='_blank' rel='noreferrer'><input className="project-btn" type="submit" value="View Project" /></a>
+          <a href='https://github.com/nasreddine19/Quiz-app' target='_blank' rel='noreferrer'><input className="project-btn" type="submit" value="Github Code" /></a>
         </div>
         
       </div>

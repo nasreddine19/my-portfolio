@@ -2,7 +2,7 @@ import React from "react";
 import nasro from "../img/Nasro.jpg";
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <img className="nasro-pic" src={nasro} alt="nasro-pic" />
       <div className="details">
         <h2 className="name">Nasreddine Boudellal</h2>

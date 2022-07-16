@@ -11,10 +11,10 @@ const Navbar = (props) => {
     <header className="navbar">
       <img src={nasroLogo} width="67px" alt="nasro-logo" />
       <nav ref={navRef} className="nav-links">
-        <a href="/#">Home</a>
-        <a href="/#">Skills</a>
-        <a href="/#">Projects</a>
-        <a href="/#">Contact</a>
+        <a href="/#home">Home</a>
+        <a href="/#skills">Skills</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
         <input
         className="dark-btn"
           type="submit"

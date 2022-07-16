@@ -30,7 +30,7 @@ const Contact = () => {
         }, 1000);
   };
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h3 className="contact-header"> Contact us</h3>
       <div className="contact">
         <img className="contact-img" src={contactUs} alt="contact-pic" />
